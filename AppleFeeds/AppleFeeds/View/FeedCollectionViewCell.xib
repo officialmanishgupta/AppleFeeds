@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="feedCell" id="VBL-wg-sCw" userLabel="FeedCollectionViewCell" customClass="FeedCollectionViewCell" customModule="AppleFeeds" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SW0-ui-XPD">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="22z-wr-pza">
+                        <rect key="frame" x="8" y="32.5" width="410" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="749" image="icon.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2y-CG-IgA">
+                                <rect key="frame" x="0.0" y="0.0" width="202.5" height="100"/>
+                            </imageView>
+                            <stackView verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" placeholderIntrinsicWidth="195" placeholderIntrinsicHeight="128" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LaC-uI-oFK">
+                                <rect key="frame" x="207.5" y="0.0" width="202.5" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Application Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3V-k9-f9L">
+                                        <rect key="frame" x="0.0" y="0.0" width="202.5" height="27"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Application Developer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00p-XF-l2a">
+                                        <rect key="frame" x="0.0" y="32" width="202.5" height="27"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Application Last Update" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKC-0f-eSZ">
+                                        <rect key="frame" x="0.0" y="64" width="202.5" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="w2y-CG-IgA" firstAttribute="top" secondItem="LaC-uI-oFK" secondAttribute="bottom" constant="-100" id="LSG-sa-8jX"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="22z-wr-pza" firstAttribute="centerY" secondItem="SW0-ui-XPD" secondAttribute="centerY" id="6W7-lV-JU6"/>
+                    <constraint firstItem="22z-wr-pza" firstAttribute="centerX" secondItem="SW0-ui-XPD" secondAttribute="centerX" id="IdP-je-GgA"/>
+                    <constraint firstItem="22z-wr-pza" firstAttribute="leading" secondItem="SW0-ui-XPD" secondAttribute="leading" constant="8" id="Yx5-uK-Xg7"/>
+                    <constraint firstAttribute="trailing" secondItem="22z-wr-pza" secondAttribute="trailing" constant="8" id="bPi-OH-mAX"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="426" height="165"/>
+            <connections>
+                <outlet property="applicationDetailsStackView" destination="LaC-uI-oFK" id="baT-ov-OgK"/>
+                <outlet property="applicationDeveloperNameLabel" destination="00p-XF-l2a" id="ngB-7K-zeI"/>
+                <outlet property="applicationLastUpdateLabel" destination="vKC-0f-eSZ" id="1kz-VK-K1J"/>
+                <outlet property="applicationNameLabel" destination="r3V-k9-f9L" id="Uxm-oY-vfp"/>
+                <outlet property="feedAppImageView" destination="w2y-CG-IgA" id="tET-4p-mvO"/>
+            </connections>
+            <point key="canvasLocation" x="-213.04347826086959" y="370.64732142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon.png" width="1024" height="1024"/>
+    </resources>
+</document>
